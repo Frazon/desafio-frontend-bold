@@ -45,7 +45,6 @@ body{
     background-color: transparent;
     color: var(--white);
     padding: 60px 0 60px 0;
-
 }
 .bg-header::after{
     content: "";
@@ -109,4 +108,27 @@ h1>.title-bottom{
     border: 1px solid #00000029;
     box-shadow: 0px 1px 6px #00000029;
     border-radius: 4px;
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+    .sub-title{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .bg-header{
+        padding-bottom: 120px;
+    }
+    .bg-header::after{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    }
+    .ctas-header{
+        flex-wrap: nowrap;
+        max-width: 400px;
+    }
 }
