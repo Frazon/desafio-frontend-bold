@@ -8,9 +8,9 @@ async function fetchProducts(){
 
         console.log('Lista de produtos', data);
 
-    } catch (exception){
+    } catch (error){
         console.error("Erro ao carregar produtos:", error);
     }
 }
 
-fetchProducts();
+// fetchProducts();
