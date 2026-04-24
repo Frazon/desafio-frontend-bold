@@ -112,15 +112,15 @@
         </p>
 
         <div class="form-share">
-            <form action="">
+            <form id="form_share">
                 <div class="flex-form-share">
                     <div class="form-group">
-                        <label>Nome do seu amigo:</label>
-                        <input type="text">
+                        <label for="name_friend">Nome do seu amigo:</label>
+                        <input type="text" name="name_friend" id="name_friend" required>
                     </div>
                     <div class="form-group">
-                        <label>E-mail dele:</label>
-                        <input type="text">
+                        <label for="email_friend">E-mail dele:</label>
+                        <input type="text" name="email_friend" id="email_friend" required>
                     </div>
                 </div>
                 <button type="submit" class="btn-submit btn-submit-share">Enviar agora</button>
@@ -135,6 +135,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/form-validation.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
